@@ -1,0 +1,1524 @@
+{
+  "ok": false,
+  "vulnerabilities": [
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H/E:F/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-BASE64URL-12139"
+      ],
+      "creationTime": "2018-03-04T08:54:39.014000Z",
+      "credit": [
+        "ChALkeR"
+      ],
+      "cvssScore": 7.1,
+      "description": "## Overview\n[base64url](https://www.npmjs.com/package/base64url) Converting to, and from, base64url.\n\nAffected versions of this package are vulnerable to Uninitialized Memory Exposure. An attacker could extract sensitive data from uninitialized memory or may cause a Denial of Service (DoS) by passing in a large number, in setups where typed user input can be passed (e.g. from JSON).\n\n## Details\nThe Buffer class on Node.js is a mutable array of binary data, and can be initialized with a string, array or number.\n```js\nconst buf1 = new Buffer([1,2,3]);\n// creates a buffer containing [01, 02, 03]\nconst buf2 = new Buffer('test');\n// creates a buffer containing ASCII bytes [74, 65, 73, 74]\nconst buf3 = new Buffer(10);\n// creates a buffer of length 10\n```\n\nThe first two variants simply create a binary representation of the value it received. The last one, however, pre-allocates a buffer of the specified size, making it a useful buffer, especially when reading data from a stream.\nWhen using the number constructor of Buffer, it will allocate the memory, but will not fill it with zeros. Instead, the allocated buffer will hold whatever was in memory at the time. If the buffer is not `zeroed` by using `buf.fill(0)`, it may leak sensitive information like keys, source code, and system info.\n\n\n## Remediation\nUpgrade `base64url` to version 3.0.0 or higher.\n**Note** This is vulnerable only for Node <=4\n\n## References\n- [HackerOne Report](https://hackerone.com/reports/321687)\n- [GitHub Commit](https://github.com/brianloveswords/base64url/commit/4355cb294123e86171daa9389f7afe6d2b2b9dae)\n",
+      "disclosureTime": "2018-05-11T08:54:39.014000Z",
+      "functions": [],
+      "id": "npm:base64url:20180511",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-BASE64URL-12139"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-201"
+        ],
+        "NSP": [
+          658
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:11.642327Z",
+      "moduleName": "base64url",
+      "packageManager": "npm",
+      "packageName": "base64url",
+      "patches": [],
+      "publicationTime": "2018-05-13T14:26:26.519000Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/brianloveswords/base64url/commit/4355cb294123e86171daa9389f7afe6d2b2b9dae"
+        },
+        {
+          "title": "HackerOne Report",
+          "url": "https://hackerone.com/reports/321687"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.0.0"
+        ]
+      },
+      "severity": "high",
+      "title": "Uninitialized Memory Exposure",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "jws@0.2.6",
+        "base64url@0.0.6"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@3.0.0",
+        "jsonwebtoken@5.0.0",
+        "jws@3.1.5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "base64url",
+      "version": "0.0.6"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H/E:F/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-BASE64URL-12139"
+      ],
+      "creationTime": "2018-03-04T08:54:39.014000Z",
+      "credit": [
+        "ChALkeR"
+      ],
+      "cvssScore": 7.1,
+      "description": "## Overview\n[base64url](https://www.npmjs.com/package/base64url) Converting to, and from, base64url.\n\nAffected versions of this package are vulnerable to Uninitialized Memory Exposure. An attacker could extract sensitive data from uninitialized memory or may cause a Denial of Service (DoS) by passing in a large number, in setups where typed user input can be passed (e.g. from JSON).\n\n## Details\nThe Buffer class on Node.js is a mutable array of binary data, and can be initialized with a string, array or number.\n```js\nconst buf1 = new Buffer([1,2,3]);\n// creates a buffer containing [01, 02, 03]\nconst buf2 = new Buffer('test');\n// creates a buffer containing ASCII bytes [74, 65, 73, 74]\nconst buf3 = new Buffer(10);\n// creates a buffer of length 10\n```\n\nThe first two variants simply create a binary representation of the value it received. The last one, however, pre-allocates a buffer of the specified size, making it a useful buffer, especially when reading data from a stream.\nWhen using the number constructor of Buffer, it will allocate the memory, but will not fill it with zeros. Instead, the allocated buffer will hold whatever was in memory at the time. If the buffer is not `zeroed` by using `buf.fill(0)`, it may leak sensitive information like keys, source code, and system info.\n\n\n## Remediation\nUpgrade `base64url` to version 3.0.0 or higher.\n**Note** This is vulnerable only for Node <=4\n\n## References\n- [HackerOne Report](https://hackerone.com/reports/321687)\n- [GitHub Commit](https://github.com/brianloveswords/base64url/commit/4355cb294123e86171daa9389f7afe6d2b2b9dae)\n",
+      "disclosureTime": "2018-05-11T08:54:39.014000Z",
+      "functions": [],
+      "id": "npm:base64url:20180511",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-BASE64URL-12139"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-201"
+        ],
+        "NSP": [
+          658
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:11.642327Z",
+      "moduleName": "base64url",
+      "packageManager": "npm",
+      "packageName": "base64url",
+      "patches": [],
+      "publicationTime": "2018-05-13T14:26:26.519000Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/brianloveswords/base64url/commit/4355cb294123e86171daa9389f7afe6d2b2b9dae"
+        },
+        {
+          "title": "HackerOne Report",
+          "url": "https://hackerone.com/reports/321687"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.0.0"
+        ]
+      },
+      "severity": "high",
+      "title": "Uninitialized Memory Exposure",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "jws@0.2.6",
+        "jwa@0.0.1",
+        "base64url@0.0.6"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@3.0.0",
+        "jsonwebtoken@5.0.0",
+        "jws@3.1.0",
+        "jwa@1.1.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "base64url",
+      "version": "0.0.6"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-CHOWNR-12184"
+      ],
+      "creationTime": "2018-07-31T16:51:47Z",
+      "credit": [
+        "pravi"
+      ],
+      "cvssScore": 4.4,
+      "description": "## Overview\nAffected versions of [chownr](https://www.npmjs.com/package/chownr) are vulnerable to Time of Check Time of Use (TOCTOU). It does not dereference symbolic links and changes the owner of the link.\n\n## Remediation\nThere is no fix version for `chownr`.\n\n## References\n- [GitHub Issue](https://github.com/isaacs/chownr/issues/14)",
+      "disclosureTime": "2018-07-31T16:51:47Z",
+      "functions": [],
+      "id": "npm:chownr:20180731",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-CHOWNR-12184"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-264"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.415162Z",
+      "moduleName": "chownr",
+      "packageManager": "npm",
+      "packageName": "chownr",
+      "patches": [],
+      "publicationTime": "2018-07-31T13:43:37.776000Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/isaacs/chownr/issues/14"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "severity": "medium",
+      "title": "Time of Check Time of Use (TOCTOU)",
+      "from": [
+        "juice-shop@8.2.0",
+        "libxmljs@0.19.5",
+        "node-pre-gyp@0.11.0",
+        "tar@4.4.8",
+        "chownr@1.1.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "chownr",
+      "version": "1.1.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-CHOWNR-12184"
+      ],
+      "creationTime": "2018-07-31T16:51:47Z",
+      "credit": [
+        "pravi"
+      ],
+      "cvssScore": 4.4,
+      "description": "## Overview\nAffected versions of [chownr](https://www.npmjs.com/package/chownr) are vulnerable to Time of Check Time of Use (TOCTOU). It does not dereference symbolic links and changes the owner of the link.\n\n## Remediation\nThere is no fix version for `chownr`.\n\n## References\n- [GitHub Issue](https://github.com/isaacs/chownr/issues/14)",
+      "disclosureTime": "2018-07-31T16:51:47Z",
+      "functions": [],
+      "id": "npm:chownr:20180731",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-CHOWNR-12184"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-264"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.415162Z",
+      "moduleName": "chownr",
+      "packageManager": "npm",
+      "packageName": "chownr",
+      "patches": [],
+      "publicationTime": "2018-07-31T13:43:37.776000Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/isaacs/chownr/issues/14"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "severity": "medium",
+      "title": "Time of Check Time of Use (TOCTOU)",
+      "from": [
+        "juice-shop@8.2.0",
+        "sqlite3@4.0.4",
+        "node-pre-gyp@0.10.3",
+        "tar@4.4.8",
+        "chownr@1.1.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "chownr",
+      "version": "1.1.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-CHOWNR-12184"
+      ],
+      "creationTime": "2018-07-31T16:51:47Z",
+      "credit": [
+        "pravi"
+      ],
+      "cvssScore": 4.4,
+      "description": "## Overview\nAffected versions of [chownr](https://www.npmjs.com/package/chownr) are vulnerable to Time of Check Time of Use (TOCTOU). It does not dereference symbolic links and changes the owner of the link.\n\n## Remediation\nThere is no fix version for `chownr`.\n\n## References\n- [GitHub Issue](https://github.com/isaacs/chownr/issues/14)",
+      "disclosureTime": "2018-07-31T16:51:47Z",
+      "functions": [],
+      "id": "npm:chownr:20180731",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-CHOWNR-12184"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-264"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.415162Z",
+      "moduleName": "chownr",
+      "packageManager": "npm",
+      "packageName": "chownr",
+      "patches": [],
+      "publicationTime": "2018-07-31T13:43:37.776000Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/isaacs/chownr/issues/14"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "severity": "medium",
+      "title": "Time of Check Time of Use (TOCTOU)",
+      "from": [
+        "juice-shop@8.2.0",
+        "grunt-contrib-compress@1.4.3",
+        "iltorb@1.3.10",
+        "prebuild-install@2.5.3",
+        "tar-fs@1.16.3",
+        "chownr@1.1.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "chownr",
+      "version": "1.1.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L/E:P/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-CLEANCSS-11052"
+      ],
+      "creationTime": "2018-03-07T11:56:23.869000Z",
+      "credit": [
+        "Jamie Davis"
+      ],
+      "cvssScore": 3.7,
+      "description": "## Overview\n[`clean-css`](https://www.npmjs.com/package/clean-css) is a fast and efficient CSS optimizer for Node.js platform and any modern browser.\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) attacks. This can cause an impact of about 10 seconds matching time for data 70k characters long.\n\n## Disclosure Timeline\n* Feb 15th, 2018 - Initial Disclosure to package owner\n* Feb 20th, 2018 - Initial Response from package owner\n* Mar 6th, 2018 - Fix issued\n* Mar 7th, 2018 - Vulnerability published\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n\n## Remediation\nUpdate `clean-css` to version 4.1.11 or higher.\n\n## References\n- [GitHub Commit](https://github.com/jakubpawlowicz/clean-css/commit/2929bafbf8cdf7dccb24e0949c70833764fa87e3)\n",
+      "disclosureTime": "2018-03-06T11:56:23.868000Z",
+      "functions": [],
+      "id": "npm:clean-css:20180306",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-CLEANCSS-11052"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-400",
+          "CWE-185"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:08.397186Z",
+      "moduleName": "clean-css",
+      "packageManager": "npm",
+      "packageName": "clean-css",
+      "patches": [],
+      "publicationTime": "2018-03-07T11:51:05.389000Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/jakubpawlowicz/clean-css/commit/2929bafbf8cdf7dccb24e0949c70833764fa87e3"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<4.1.11"
+        ]
+      },
+      "severity": "low",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "jade@1.11.0",
+        "clean-css@3.4.28"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "clean-css",
+      "version": "3.4.28"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "alternativeIds": [
+        "SNYK-JS-CONSTANTINOPLE-12136"
+      ],
+      "creationTime": "2018-03-02T16:46:56.854000Z",
+      "credit": [
+        "Mike Samuel"
+      ],
+      "cvssScore": 10,
+      "description": "## Overview\n[`constantinople`](https://www.npmjs.com/package/constantinople) determines whether a JavaScript expression evaluates to a constant (using acorn).\n\nAffected versions of this package are vulnerable to a sandbox bypass which can lead to arbitrary code execution.\n\n## Remediation\nUpgrade `constantinople` to version 3.1.1 or higher.\n\n## References\n- [NSP Advisory](https://nodesecurity.io/advisories/568)",
+      "disclosureTime": "2018-04-21T04:33:52.489000Z",
+      "functions": [],
+      "id": "npm:constantinople:20180421",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-CONSTANTINOPLE-12136"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-264"
+        ],
+        "NSP": [
+          568
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:11.783057Z",
+      "moduleName": "constantinople",
+      "packageManager": "npm",
+      "packageName": "constantinople",
+      "patches": [],
+      "publicationTime": "2018-05-09T16:11:26.492000Z",
+      "references": [
+        {
+          "title": "NSP Advisory",
+          "url": "https://nodesecurity.io/advisories/568"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.1.1"
+        ]
+      },
+      "severity": "high",
+      "title": "Sandbox Bypass",
+      "from": [
+        "juice-shop@8.2.0",
+        "jade@1.11.0",
+        "constantinople@3.0.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "constantinople",
+      "version": "3.0.2"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "alternativeIds": [
+        "SNYK-JS-JSONWEBTOKEN-10037"
+      ],
+      "creationTime": "2015-03-31T16:00:00Z",
+      "credit": [
+        "Tim McLean"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken) is a JSON Web token implementation for symmetric and asymmetric keys.\nAffected versions of this package are vulnerable to an Authentication Bypass attack, due to the \"algorithm\" not being enforced. Attackers are given the opportunity to choose the algorithm sent to the server and generate signatures with arbitrary contents. The server expects an asymmetric key (RSA) but is sent a symmetric key (HMAC-SHA) with RSA's public key, so instead of going through a key validation process, the server will think the public key is actually an HMAC private key.\n\n## Remediation\nUpgrade `jsonwebtoken` to version 4.2.2 or greater.\n\n## References\n- [GitHub Commit](https://github.com/auth0/node-jsonwebtoken/commit/1bb584bc382295eeb7ee8c4452a673a77a68b687)\n- [Tim McLean Blog](https://www.timmclean.net/2015/02/25/jwt-alg-none.html)\n- [Auth0 Blog](https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/)\n",
+      "disclosureTime": "2015-03-31T16:00:00Z",
+      "functions": [],
+      "id": "npm:jsonwebtoken:20150331",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-JSONWEBTOKEN-10037"
+        ],
+        "CVE": [
+          "CVE-2015-9235"
+        ],
+        "CWE": [
+          "CWE-592"
+        ],
+        "NSP": [
+          17
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-18T11:50:40.175831Z",
+      "moduleName": "jsonwebtoken",
+      "packageManager": "npm",
+      "packageName": "jsonwebtoken",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:jsonwebtoken:20150331:0",
+          "modificationTime": "2018-09-04T11:57:08.561077Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/jsonwebtoken/20150331/jsonwebtoken_20150331_0_0_1bb584bc382295eeb7ee8c4452a673a77a68b687_snyk.patch"
+          ],
+          "version": "=4.0.0 || =4.1.0 || =4.2.1"
+        }
+      ],
+      "publicationTime": "2015-03-31T16:00:00Z",
+      "references": [
+        {
+          "title": "Auth0 Blog",
+          "url": "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/"
+        },
+        {
+          "title": "Tim McLean Blog",
+          "url": "https://www.timmclean.net/2015/02/25/jwt-alg-none.html"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/auth0/node-jsonwebtoken/commit/1bb584bc382295eeb7ee8c4452a673a77a68b687"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<4.2.2"
+        ]
+      },
+      "severity": "high",
+      "title": "Authentication Bypass",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@2.1.0",
+        "jsonwebtoken@4.2.2"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "jsonwebtoken",
+      "version": "0.1.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "alternativeIds": [
+        "SNYK-JS-JWS-10125"
+      ],
+      "creationTime": "2016-07-26T22:10:17.386000Z",
+      "credit": [
+        "Brian Brennan and Tim McLean"
+      ],
+      "cvssScore": 8.7,
+      "description": "## Overview\n[`jws`](https://www.npmjs.com/package/jws) is an implementation of JSON Web Signatures.\nAffected versions of this package are vulnerable to an Authentication Bypass attack, due to the \"algorithm\" not being enforced in `jws.verify()`. Attackers are given the opportunity to choose the algorithm sent to the server and generate signatures with arbitrary contents. The server expects an asymmetric key (RSA) but is sent a symmetric key (HMAC-SHA) with RSA's public key, so instead of going through a key validation process, the server will think the public key is actually an HMAC private key.\n\n## Remediation\nUpgrade `jws` to version `3.0.0` or later.\n\n## References\n- [Auth0 Blog](https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/)\n",
+      "disclosureTime": "2016-07-26T17:21:17Z",
+      "functions": [],
+      "id": "npm:jws:20160726",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-JWS-10125"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-310"
+        ],
+        "NSP": [
+          88
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-18T11:50:40.130643Z",
+      "moduleName": "jws",
+      "packageManager": "npm",
+      "packageName": "jws",
+      "patches": [],
+      "publicationTime": "2016-07-26T17:21:17Z",
+      "references": [
+        {
+          "title": "Auth0 Blog",
+          "url": "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.0.0"
+        ]
+      },
+      "severity": "high",
+      "title": "Forgeable Public/Private Tokens",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "jws@0.2.6"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@3.0.0",
+        "jsonwebtoken@5.0.0",
+        "jws@3.0.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "jws",
+      "version": "0.2.6"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:L/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:L/E:F/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-LODASH-12060"
+      ],
+      "creationTime": "2018-02-12T22:28:27.654000Z",
+      "credit": [
+        "Olivier Arteau (HoLyVieR)"
+      ],
+      "cvssScore": 1.8,
+      "description": "## Overview\n[lodash](https://lodash.com/) is a javaScript utility library delivering modularity, performance & extras.\n\nAffected versions of this package are vulnerable to Prototype Pollution. \nThe utilities function allow modification of the `Object` prototype. If an attacker can control part of the structure passed to this function, they could add or modify an existing property.  \n\n## PoC by Olivier Arteau (HoLyVieR)\n```js\nvar _= require('lodash');\nvar malicious_payload = '{\"__proto__\":{\"oops\":\"It works !\"}}';\n\nvar a = {};\nconsole.log(\"Before : \" + a.oops);\n_.merge({}, JSON.parse(malicious_payload));\nconsole.log(\"After : \" + a.oops);\n```\n\n## Remediation\nUpgrade `lodash` to version 4.17.5 or higher.\n\n## References\n- [HackerOne Report](https://hackerone.com/reports/310443)\n- [GiTHub Commit](https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a)\n",
+      "disclosureTime": "2018-01-30T22:28:27.654000Z",
+      "functions": [
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "lodash.js",
+            "functionName": "baseMergeDeep"
+          },
+          "version": [
+            "<4.17.5"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "lodash.js",
+            "functionName": "baseMerge"
+          },
+          "version": [
+            "<4.17.5"
+          ]
+        }
+      ],
+      "id": "npm:lodash:20180130",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-LODASH-12060"
+        ],
+        "CVE": [
+          "CVE-2018-3721"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "NSP": [
+          577
+        ]
+      },
+      "language": "js",
+      "methods": [
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "lodash.js",
+            "methodName": "baseMergeDeep"
+          },
+          "version": [
+            "<4.17.5"
+          ]
+        },
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "lodash.js",
+            "methodName": "baseMerge"
+          },
+          "version": [
+            "<4.17.5"
+          ]
+        }
+      ],
+      "modificationTime": "2018-11-22T10:10:06.176480Z",
+      "moduleName": "lodash",
+      "packageManager": "npm",
+      "packageName": "lodash",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:lodash:20180130:0",
+          "modificationTime": "2018-09-04T11:57:08.714161Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/lodash/20180130/20180130_0_0_lodash_d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a.patch"
+          ],
+          "version": "=3.10.1"
+        }
+      ],
+      "publicationTime": "2018-02-14T13:22:50.572000Z",
+      "references": [
+        {
+          "title": "GiTHub Commit",
+          "url": "https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a"
+        },
+        {
+          "title": "HackerOne Report",
+          "url": "https://hackerone.com/reports/310443"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<4.17.5"
+        ]
+      },
+      "severity": "low",
+      "title": "Prototype Pollution",
+      "from": [
+        "juice-shop@8.2.0",
+        "sanitize-html@1.4.2",
+        "lodash@2.4.2"
+      ],
+      "upgradePath": [
+        false,
+        "sanitize-html@1.7.1"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "lodash",
+      "version": "2.4.2"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MOMENT-10084"
+      ],
+      "creationTime": "2016-02-01T19:00:03.862000Z",
+      "credit": [
+        "Adam Baldwin"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[`moment`](https://www.npmjs.com/package/moment) is a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.\n\nAn attacker can provide a long value to the `duration` function, which nearly matches the pattern being matched. This will cause the regular expression matching to take a long time, all the while occupying the event loop and preventing it from processing other requests and making the server unavailable (a Denial of Service attack).\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n\n## Remediation\nUpgrade `moment` to version `2.11.2` or greater.\n\n## References\n- [OWASP ReDoS](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS)\n- [GitHub Commit](https://github.com/moment/moment/commit/52a807b961ead925be11ff5e632c8f7325a9ce36)\n- [GitHub Issue](https://github.com/moment/moment/issues/2936)\n",
+      "disclosureTime": "2016-01-26T20:04:21.225000Z",
+      "functions": [],
+      "id": "npm:moment:20160126",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MOMENT-10084"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-400"
+        ],
+        "NSP": [
+          55
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.594098Z",
+      "moduleName": "moment",
+      "packageManager": "npm",
+      "packageName": "moment",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20160126:4",
+          "modificationTime": "2018-09-04T11:57:08.624410Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20160126/moment_20160126_0_4_34af63b8b21208a949dfaf42d228502c73d20ec0.patch"
+          ],
+          "version": "<2.2.1 >2.0.0"
+        },
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20160126:3",
+          "modificationTime": "2018-09-04T11:57:08.623137Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20160126/moment_20160126_0_3_34af63b8b21208a949dfaf42d228502c73d20ec0.patch"
+          ],
+          "version": "=2.2.1"
+        },
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20160126:2",
+          "modificationTime": "2018-09-04T11:57:08.621848Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20160126/moment_20160126_0_2_34af63b8b21208a949dfaf42d228502c73d20ec0.patch"
+          ],
+          "version": "<=2.9.0 >2.2.1"
+        },
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20160126:1",
+          "modificationTime": "2018-09-04T11:57:08.620573Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20160126/moment_20160126_0_1_34af63b8b21208a949dfaf42d228502c73d20ec0.patch"
+          ],
+          "version": "<=2.10.6 >2.9.0"
+        },
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20160126:0",
+          "modificationTime": "2018-09-04T11:57:08.619206Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20160126/moment_20160126_0_0_34af63b8b21208a949dfaf42d228502c73d20ec0.patch"
+          ],
+          "version": "<=2.11.1 >2.10.6"
+        }
+      ],
+      "publicationTime": "2016-02-01T19:00:03.862000Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/moment/moment/issues/2936"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/moment/moment/commit/52a807b961ead925be11ff5e632c8f7325a9ce36"
+        },
+        {
+          "title": "OWASP ReDoS",
+          "url": "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<=2.11.1"
+        ]
+      },
+      "severity": "low",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "moment@2.0.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@0.1.4",
+        "jsonwebtoken@0.3.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "moment",
+      "version": "2.0.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [
+        "SNYK-JS-MOMENT-10164"
+      ],
+      "creationTime": "2016-10-23T06:57:59.675000Z",
+      "credit": [
+        "Snyk Security Research Team"
+      ],
+      "cvssScore": 5.9,
+      "description": "## Overview\n[`moment`](https://www.npmjs.com/package/moment) is a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.\n\nAffected versions of the package are vulnerable to Regular Expression Denial of Service (ReDoS) attacks for any locale that has separate format and standalone options and `format` input can be controlled by the user.\n\nAn attacker can provide a specially crafted input to the `format` function, which nearly matches the pattern being matched. This will cause the regular expression matching to take a long time, all the while occupying the event loop and preventing it from processing other requests and making the server unavailable (a Denial of Service attack).\n\n## Disclosure Timeline\n- October 19th, 2016 - Reported the issue to package owner.\n- October 19th, 2016 - Issue acknowledged by package owner.\n- October 24th, 2016 - Issue fixed and version `2.15.2` released.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n\n## References\n- [Proof of concept](https://gist.github.com/grnd/50192ce22681848a7de812d95241b7fc)\n- [Fix commit](https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9)\n",
+      "disclosureTime": "2016-10-18T21:00:00Z",
+      "functions": [],
+      "id": "npm:moment:20161019",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MOMENT-10164"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.577418Z",
+      "moduleName": "moment",
+      "packageManager": "npm",
+      "packageName": "moment",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20161019:1",
+          "modificationTime": "2018-09-04T11:57:08.677140Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20161019/moment_20161019_0_0.patch"
+          ],
+          "version": "<2.14.0 >=2.12.0"
+        },
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20161019:0",
+          "modificationTime": "2018-09-04T11:57:08.675982Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20161019/moment_20161019_0_1.patch"
+          ],
+          "version": "<2.15.2 >=2.14.0"
+        }
+      ],
+      "publicationTime": "2016-10-24T06:57:59.675000Z",
+      "references": [
+        {
+          "title": "Fix commit",
+          "url": "https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9"
+        },
+        {
+          "title": "Proof of concept",
+          "url": "https://gist.github.com/grnd/50192ce22681848a7de812d95241b7fc"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2.15.2"
+        ]
+      },
+      "severity": "medium",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "moment@2.0.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@0.1.4",
+        "jsonwebtoken@0.3.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "moment",
+      "version": "2.0.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MOMENT-10841"
+      ],
+      "creationTime": "2017-09-13T07:55:05.106000Z",
+      "credit": [
+        "Cristian-Alexandru Staicu"
+      ],
+      "cvssScore": 3.7,
+      "description": "## Overview\n[`moment`](https://www.npmjs.com/package/moment) is a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.\n\nAffected versions of this package are vulnerable to Regular expression Denial of Service (ReDoS) attacks. It used a regular expression (`/[0-9]*['a-z\\u00A0-\\u05FF\\u0700-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF]+|[\\u0600-\\u06FF\\/]+(\\s*?[\\u0600-\\u06FF]+){1,2}/i`) in order to parse dates specified as strings. This can cause a very low impact of about 2 seconds matching time for data 50k characters long.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n\n## Remediation\nUpgrade `moment` to version `2.19.3` or higher.\n\n## References\n- [GitHub Issue](https://github.com/moment/moment/issues/4163)\n",
+      "disclosureTime": "2017-09-05T21:00:00Z",
+      "functions": [
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "functionName": "weekdaysMinRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "functionName": "weekdaysShortRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "functionName": "weekdaysRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "functionName": "monthsRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "functionName": "monthsShortRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        }
+      ],
+      "id": "npm:moment:20170905",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MOMENT-10841"
+        ],
+        "CVE": [
+          "CVE-2017-18214"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "NSP": [
+          532
+        ]
+      },
+      "language": "js",
+      "methods": [
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "methodName": "weekdaysMinRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "methodName": "weekdaysShortRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "methodName": "weekdaysRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "methodName": "monthsRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        },
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "src/lib/parse/regex.js",
+            "methodName": "monthsShortRegex"
+          },
+          "version": [
+            "<2.19.3"
+          ]
+        }
+      ],
+      "modificationTime": "2018-11-22T10:10:07.126549Z",
+      "moduleName": "moment",
+      "packageManager": "npm",
+      "packageName": "moment",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:moment:20170905:0",
+          "modificationTime": "2018-09-04T11:57:08.712850Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/moment/20170905/moment_0_0_69ed9d44957fa6ab12b73d2ae29d286a857b80eb.patch"
+          ],
+          "version": "<2.19.3 >=2.16.0"
+        }
+      ],
+      "publicationTime": "2017-11-28T14:47:22.471000Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/moment/moment/issues/4163"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2.19.3"
+        ]
+      },
+      "severity": "low",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "express-jwt@0.1.3",
+        "jsonwebtoken@0.1.0",
+        "moment@2.0.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-jwt@0.1.4",
+        "jsonwebtoken@0.3.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "moment",
+      "version": "2.0.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+      "alternativeIds": [
+        "SNYK-JS-SANITIZEHTML-10048"
+      ],
+      "creationTime": "2015-11-06T02:09:36.180000Z",
+      "credit": [],
+      "cvssScore": 4.3,
+      "description": "## Overview\n\nSince the sanitize-html module trusts 'text' coming from htmlparser2, and outputs it without further escaping (because htmlparser2 does not decode entities in text before delivering it), this results in an XSS attack vector if sanitize-html ignores the img tag (according to user-configured filter rules) but passes the text intact, as it must do to keep any text in documents.\n\n## Details\nCross-Site Scripting (XSS) attacks occur when an attacker tricks a user’s browser to execute malicious JavaScript code in the context of a victim’s domain. Such scripts can steal the user’s session cookies for the domain, scrape or modify its content, and perform or modify actions on the user’s behalf, actions typically blocked by the browser’s Same Origin Policy.\n\nThese attacks are possible by escaping the context of the web application and injecting malicious scripts in an otherwise trusted website. These scripts can introduce additional attributes (say, a \"new\" option in a dropdown list or a new link to a malicious site) and can potentially execute code on the clients side, unbeknown to the victim. This occurs when characters like `<` `>` `\"` `'` are not escaped properly.\n\nThere are a few types of XSS:\n- **Persistent XSS** is an attack in which the malicious code persists into the web app’s database.\n- **Reflected XSS** is an which the website echoes back a portion of the request. The attacker needs to trick the user into clicking a malicious link (for instance through a phishing email or malicious JS on another page), which triggers the XSS attack.\n- **DOM-based XSS** is an that occurs purely in the browser when client-side JavaScript echoes back a portion of the URL onto the page. DOM-Based XSS is notoriously hard to detect, as the server never gets a chance to see the attack taking place.\n\n\n## References\n- https://github.com/punkave/sanitize-html/issues/29\n",
+      "disclosureTime": "2015-11-06T02:09:36.180000Z",
+      "functions": [],
+      "id": "npm:sanitize-html:20141024",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-SANITIZEHTML-10048"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-79"
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-18T11:50:40.258690Z",
+      "moduleName": "sanitize-html",
+      "packageManager": "npm",
+      "packageName": "sanitize-html",
+      "patches": [],
+      "publicationTime": "2015-11-06T02:09:36.180000Z",
+      "references": [
+        {
+          "title": "GITHUB.COM",
+          "url": "https://github.com/punkave/sanitize-html/issues/29"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "< 1.4.3"
+        ]
+      },
+      "severity": "medium",
+      "title": "Cross-site Scripting (XSS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "sanitize-html@1.4.2"
+      ],
+      "upgradePath": [
+        false,
+        "sanitize-html@1.4.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "sanitize-html",
+      "version": "1.4.2"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N",
+      "alternativeIds": [
+        "SNYK-JS-SANITIZEHTML-10127"
+      ],
+      "creationTime": "2016-08-02T08:28:08.097000Z",
+      "credit": [
+        "Björn Kimminich"
+      ],
+      "cvssScore": 4.7,
+      "description": "## Overview\nSanitization of HTML strings is not applied recursively to input, allowing an attacker to potentially inject script and other markup.\n\nSource: _Node Security Project_\n\n## Details\nCross-Site Scripting (XSS) attacks occur when an attacker tricks a user’s browser to execute malicious JavaScript code in the context of a victim’s domain. Such scripts can steal the user’s session cookies for the domain, scrape or modify its content, and perform or modify actions on the user’s behalf, actions typically blocked by the browser’s Same Origin Policy.\n\nThese attacks are possible by escaping the context of the web application and injecting malicious scripts in an otherwise trusted website. These scripts can introduce additional attributes (say, a \"new\" option in a dropdown list or a new link to a malicious site) and can potentially execute code on the clients side, unbeknown to the victim. This occurs when characters like `<` `>` `\"` `'` are not escaped properly.\n\nThere are a few types of XSS:\n- **Persistent XSS** is an attack in which the malicious code persists into the web app’s database.\n- **Reflected XSS** is an which the website echoes back a portion of the request. The attacker needs to trick the user into clicking a malicious link (for instance through a phishing email or malicious JS on another page), which triggers the XSS attack.\n- **DOM-based XSS** is an that occurs purely in the browser when client-side JavaScript echoes back a portion of the URL onto the page. DOM-Based XSS is notoriously hard to detect, as the server never gets a chance to see the attack taking place.\n\n\n## Remediation\nUpgrade `sanitize-html` to `1.4.3` or later\n\n## References\n- https://github.com/punkave/sanitize-html/issues/29\n- https://github.com/punkave/sanitize-html/commit/762fbc7bba389f3f789cc291c1eb2b64f60f2caf\n\n",
+      "disclosureTime": "2016-08-01T18:02:31Z",
+      "functions": [],
+      "id": "npm:sanitize-html:20160801",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-SANITIZEHTML-10127"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-79"
+        ],
+        "NSP": [
+          135
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-18T11:50:40.402417Z",
+      "moduleName": "sanitize-html",
+      "packageManager": "npm",
+      "packageName": "sanitize-html",
+      "patches": [],
+      "publicationTime": "2016-08-01T18:02:31Z",
+      "references": [
+        {
+          "title": "GITHUB.COM",
+          "url": "https://github.com/punkave/sanitize-html/commit/762fbc7bba389f3f789cc291c1eb2b64f60f2caf"
+        },
+        {
+          "title": "GITHUB.COM",
+          "url": "https://github.com/punkave/sanitize-html/issues/29"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<=1.4.2"
+        ]
+      },
+      "severity": "medium",
+      "title": "Cross-site Scripting (XSS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "sanitize-html@1.4.2"
+      ],
+      "upgradePath": [
+        false,
+        "sanitize-html@1.4.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "sanitize-html",
+      "version": "1.4.2"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:F/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-SANITIZEHTML-10461"
+      ],
+      "creationTime": "2017-04-12T10:49:58.283000Z",
+      "credit": [
+        "Andrew Krasichkov"
+      ],
+      "cvssScore": 5.4,
+      "description": "## Overview\n[`sanitize-html`](https://www.npmjs.com/package/sanitize-html) is a library for scrubbing html input of malicious values.\n\nAffected versions of this package are vulnerable to Cross-site Scripting (XSS) attacks. If at least one `nonTextTags` tag is allowed, a malicious user may potentially conduct an XSS attack.\n\n**PoC:**\n```js\nvar sanitizeHtml = require('sanitize-html');\n\nvar dirty = '!<textarea>&lt;/textarea&gt;<svg/onload=prompt`xs`&gt;</textarea>!';\nvar clean = sanitizeHtml(dirty, {\n    allowedTags: [ 'textarea' ]\n});\n\nconsole.log(clean);\n\n// !<textarea></textarea><svg/onload=prompt`xs`></textarea>!\n```\n\n## Details\nCross-Site Scripting (XSS) attacks occur when an attacker tricks a user’s browser to execute malicious JavaScript code in the context of a victim’s domain. Such scripts can steal the user’s session cookies for the domain, scrape or modify its content, and perform or modify actions on the user’s behalf, actions typically blocked by the browser’s Same Origin Policy.\n\nThese attacks are possible by escaping the context of the web application and injecting malicious scripts in an otherwise trusted website. These scripts can introduce additional attributes (say, a \"new\" option in a dropdown list or a new link to a malicious site) and can potentially execute code on the clients side, unbeknown to the victim. This occurs when characters like `<` `>` `\"` `'` are not escaped properly.\n\nThere are a few types of XSS:\n- **Persistent XSS** is an attack in which the malicious code persists into the web app’s database.\n- **Reflected XSS** is an which the website echoes back a portion of the request. The attacker needs to trick the user into clicking a malicious link (for instance through a phishing email or malicious JS on another page), which triggers the XSS attack.\n- **DOM-based XSS** is an that occurs purely in the browser when client-side JavaScript echoes back a portion of the URL onto the page. DOM-Based XSS is notoriously hard to detect, as the server never gets a chance to see the attack taking place.\n\n\n## Remediation\nUpgrade `sanitize-html` to version 1.11.4 or later.\n\n## References\n- [GitHub Issue](https://github.com/punkave/sanitize-html/issues/100)\n- [GitHub Commit](https://github.com/punkave/sanitize-html/commit/5d205a1005ba0df80e21d8c64a15bb3accdb2403)\n",
+      "disclosureTime": "2016-03-26T23:49:58.283000Z",
+      "functions": [],
+      "id": "npm:sanitize-html:20161026",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-SANITIZEHTML-10461"
+        ],
+        "CVE": [
+          "CVE-2017-16016"
+        ],
+        "CWE": [
+          "CWE-79"
+        ],
+        "NSP": [
+          154
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-18T11:50:40.972937Z",
+      "moduleName": "sanitize-html",
+      "packageManager": "npm",
+      "packageName": "sanitize-html",
+      "patches": [],
+      "publicationTime": "2017-04-12T11:00:58.283000Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/punkave/sanitize-html/commit/5d205a1005ba0df80e21d8c64a15bb3accdb2403"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/punkave/sanitize-html/issues/100"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.11.4"
+        ]
+      },
+      "severity": "medium",
+      "title": "Cross-site Scripting (XSS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "sanitize-html@1.4.2"
+      ],
+      "upgradePath": [
+        false,
+        "sanitize-html@1.11.4"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "sanitize-html",
+      "version": "1.4.2"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-UGLIFYJS-10041"
+      ],
+      "creationTime": "2015-08-24T09:29:10Z",
+      "credit": [
+        "Tom MacWright"
+      ],
+      "cvssScore": 8.3,
+      "description": "## Overview\n[`uglify-js`](http://npmjs.com/package/uglify-js) is a JavaScript parser, minifier, compressor and beautifier toolkit.\n\n[Tom MacWright](https://github.com/mishoo/UglifyJS2/issues/751) discovered that UglifyJS versions 2.4.23 and earlier are affected by a vulnerability which allows a specially crafted Javascript file to have altered functionality after minification. This bug was [demonstrated](https://zyan.scripts.mit.edu/blog/backdooring-js/) by [Yan](https://twitter.com/bcrypt) to allow potentially malicious code to be hidden within secure code, activated by minification.\n\n### Details\nIn Boolean algebra, DeMorgan's laws describe the relationships between conjunctions (`&&`), disjunctions (`||`) and negations (`!`).\nIn Javascript form, they state that:\n```savascript\n !(a && b) === (!a) || (!b)\n !(a || b) === (!a) && (!b)\n```\n\nThe law does not hold true when one of the values is not a boolean however.\n\nVulnerable versions of UglifyJS do not account for this restriction, and erroneously apply the laws to a statement if it can be reduced in length by it.\n\nConsider this authentication function:\n\n```javascript\nfunction isTokenValid(user) {\n    var timeLeft =\n        !!config && // config object exists\n        !!user.token && // user object has a token\n        !user.token.invalidated && // token is not explicitly invalidated\n        !config.uninitialized && // config is initialized\n        !config.ignoreTimestamps && // don't ignore timestamps\n        getTimeLeft(user.token.expiry); // > 0 if expiration is in the future\n\n    // The token must not be expired\n    return timeLeft > 0;\n}\n\nfunction getTimeLeft(expiry) {\n  return expiry - getSystemTime();\n}\n```\nWhen minified with a vulnerable version of UglifyJS, it will produce the following insecure output, where a token will never expire:\n\n( Formatted for readability )\n\n```javascript\nfunction isTokenValid(user) {\n    var timeLeft = !(                       // negation\n        !config                             // config object does not exist\n        || !user.token                      // user object does not have a token\n        || user.token.invalidated           // token is explicitly invalidated\n        || config.uninitialized             // config isn't initialized\n        || config.ignoreTimestamps          // ignore timestamps\n        || !getTimeLeft(user.token.expiry)  // > 0 if expiration is in the future\n    );\n    return timeLeft > 0\n}\n\nfunction getTimeLeft(expiry) {\n    return expiry - getSystemTime()\n}\n```\n\n## Remediation\nUpgrade UglifyJS to version `2.4.24` or higher.\n\n## References\n- [Blog Post](https://zyan.scripts.mit.edu/blog/backdooring-js/)\n- [GitHub Issue](https://github.com/mishoo/UglifyJS2/issues/751)\n",
+      "disclosureTime": "2015-08-24T09:29:10Z",
+      "functions": [],
+      "id": "npm:uglify-js:20150824",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-UGLIFYJS-10041"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-95"
+        ],
+        "NSP": [
+          39
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-11-22T10:10:06.285397Z",
+      "moduleName": "uglify-js",
+      "packageManager": "npm",
+      "packageName": "uglify-js",
+      "patches": [
+        {
+          "comments": [],
+          "id": "patch:npm:uglify-js:20150824:0",
+          "modificationTime": "2018-09-04T11:57:08.565303Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/uglify-js/20150824/uglify-js_20150824_0_0_905b6011784ca60d41919ac1a499962b7c1d4b02_snyk.patch"
+          ],
+          "version": "<= 2.4.23 >2.0.0"
+        }
+      ],
+      "publicationTime": "2015-08-24T09:29:10Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/mishoo/UglifyJS2/issues/751"
+        },
+        {
+          "title": "Blog Post",
+          "url": "https://zyan.scripts.mit.edu/blog/backdooring-js/"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<= 2.4.23"
+        ]
+      },
+      "severity": "high",
+      "title": "Improper minification of non-boolean comparisons",
+      "from": [
+        "juice-shop@8.2.0",
+        "jade@1.11.0",
+        "transformers@2.1.0",
+        "uglify-js@2.2.5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": true,
+      "name": "uglify-js",
+      "version": "2.2.5"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [
+        "SNYK-JS-UGLIFYJS-10059"
+      ],
+      "creationTime": "2015-11-06T02:09:36.186000Z",
+      "credit": [
+        "Adam Baldwin"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\r\nThe `parse()` function in the [`uglify-js`](https://www.npmjs.com/package/uglify-js) package prior to version 2.6.0 is vulnerable to regular expression denial of service (ReDoS) attacks when long inputs of certain patterns are processed.\r\n\r\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\r\n\r\n## Remediation\r\nUpgrade to version `2.6.0` or greater.\r\nIf a direct dependency update is not possible, use `snyk wizard` to patch this vulnerability.\r\n\r\n## References\r\n- [OWASP - ReDoS](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS)",
+      "disclosureTime": "2015-10-24T21:01:32Z",
+      "functions": [
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "lib/parse.js",
+            "functionName": "parse_js_number"
+          },
+          "version": [
+            "<2.6.0"
+          ]
+        }
+      ],
+      "id": "npm:uglify-js:20151024",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-UGLIFYJS-10059"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-400"
+        ],
+        "NSP": [
+          48
+        ]
+      },
+      "language": "js",
+      "methods": [
+        {
+          "methodId": {
+            "className": null,
+            "filePath": "lib/parse.js",
+            "methodName": "parse_js_number"
+          },
+          "version": [
+            "<2.6.0"
+          ]
+        }
+      ],
+      "modificationTime": "2018-11-22T10:10:06.098029Z",
+      "moduleName": "uglify-js",
+      "packageManager": "npm",
+      "packageName": "uglify-js",
+      "patches": [
+        {
+          "comments": [
+            "https://github.com/mishoo/UglifyJS2/commit/63d35f8.patch"
+          ],
+          "id": "patch:npm:uglify-js:20151024:1",
+          "modificationTime": "2018-09-04T11:57:08.580347Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/uglify-js/20151024/uglify-js_20151024_0_0_63d35f8_snyk.patch"
+          ],
+          "version": "<2.6.0 >2.4.23"
+        },
+        {
+          "comments": [
+            "https://github.com/mishoo/UglifyJS2/commit/63d35f8.patch"
+          ],
+          "id": "patch:npm:uglify-js:20151024:0",
+          "modificationTime": "2018-09-04T11:57:08.579071Z",
+          "urls": [
+            "https://s3.amazonaws.com/snyk-rules-pre-repository/snapshots/master/patches/npm/uglify-js/20151024/uglify-js_20151024_0_0_63d35f8_snyk_inc.patch"
+          ],
+          "version": "<= 2.4.23 >=2.2.0"
+        }
+      ],
+      "publicationTime": "2015-11-06T02:09:36Z",
+      "references": [
+        {
+          "title": "OWASP - ReDoS",
+          "url": "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2.6.0"
+        ]
+      },
+      "severity": "medium",
+      "title": "Regular Expression Denial of Service (DoS)",
+      "from": [
+        "juice-shop@8.2.0",
+        "jade@1.11.0",
+        "transformers@2.1.0",
+        "uglify-js@2.2.5"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": true,
+      "name": "uglify-js",
+      "version": "2.2.5"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H/E:H/RL:O/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-UNZIPPER-11098"
+      ],
+      "creationTime": "2018-05-30T07:30:46.718000Z",
+      "credit": [
+        "Snyk Security Research Team"
+      ],
+      "cvssScore": 9.4,
+      "description": "## Overview\r\n[`unzipper`](https://www.npmjs.com/package/unzipper) is an Unzip cross-platform streaming API.\r\n\r\nAffected versions of the package are vulnerable to Arbitrary File Write via Archive Extraction (AKA \"Zip Slip\").\r\n\r\nIt is exploited using a specially crafted zip archive, that holds path traversal filenames. When exploited, a filename in a malicious archive is concatenated to the target extraction directory, which results in the final path ending up outside of the target folder. For instance, a zip may hold a file with a \"../../file.exe\" location and thus break out of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.\r\n\r\nThe following is an example of a zip archive with one benign file and one malicious file. Extracting the malicous file will result in traversing out of the target folder, ending up in `/root/.ssh/` overwriting the `authorized_keys` file:\r\n\r\n```\r\n\r\n+2018-04-15 22:04:29 ..... 19 19 good.txt\r\n\r\n+2018-04-15 22:04:42 ..... 20 20 ../../../../../../root/.ssh/authorized_keys\r\n\r\n```\r\n\r\n## Remediation\r\nUpgrade `unzipper` to version 0.8.13 or higher.\n\n## References\n- [List of fixed projects that contained Zip Slip](https://github.com/snyk/zip-slip-vulnerability)\n- [Zip Slip Advisory](https://snyk.io/research/zip-slip-vulnerability)\n- [GitHub Commit](https://github.com/ZJONSSON/node-unzipper/pull/59/commits/5f68901c2e2e062a5e0083a81d257eccea0eb760)\n- [GitHub PR](https://github.com/ZJONSSON/node-unzipper/pull/59)\n",
+      "disclosureTime": "2018-04-14T21:00:00Z",
+      "functions": [],
+      "id": "npm:unzipper:20180415",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-UNZIPPER-11098"
+        ],
+        "CVE": [
+          "CVE-2018-1002203"
+        ],
+        "CWE": [
+          "CWE-29"
+        ],
+        "NSP": [
+          680
+        ]
+      },
+      "language": "js",
+      "methods": [],
+      "modificationTime": "2018-12-12T14:34:29.399450Z",
+      "moduleName": "unzipper",
+      "packageManager": "npm",
+      "packageName": "unzipper",
+      "patches": [],
+      "publicationTime": "2018-05-31T07:30:46Z",
+      "references": [
+        {
+          "title": "List of fixed projects that contained Zip Slip",
+          "url": "https://github.com/snyk/zip-slip-vulnerability"
+        },
+        {
+          "title": "Zip Slip Advisory",
+          "url": "https://snyk.io/research/zip-slip-vulnerability"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/ZJONSSON/node-unzipper/pull/59/commits/5f68901c2e2e062a5e0083a81d257eccea0eb760"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/ZJONSSON/node-unzipper/pull/59"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<0.8.13"
+        ]
+      },
+      "severity": "high",
+      "title": "Arbitrary File Write via Archive Extraction (Zip Slip)",
+      "from": [
+        "juice-shop@8.2.0",
+        "unzipper@0.8.12"
+      ],
+      "upgradePath": [
+        false,
+        "unzipper@0.8.13"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "unzipper",
+      "version": "0.8.12"
+    }
+  ],
+  "dependencyCount": 676,
+  "org": "omerlsolutocom",
+  "licensesPolicy": null,
+  "isPrivate": true,
+  "packageManager": "npm",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.13.1\nignore: {}\npatch: {}\n",
+  "ignoreSettings": null,
+  "summary": "19 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 16,
+  "path": "/Users/omerl/dev/juice-shop"
+}

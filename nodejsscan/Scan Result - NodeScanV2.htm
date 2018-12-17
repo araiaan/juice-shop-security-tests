@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)http://localhost:9090/result/45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/ -->
+<html class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  
+    <link href="./Scan Result - NodeScanV2_files/bootstrap.min_yeti.css" rel="stylesheet">
+    <link href="./Scan Result - NodeScanV2_files/base.css" rel="stylesheet">
+    <title>
+Scan Result
+ - NodeScanV2</title>
+    <script src="./Scan Result - NodeScanV2_files/jquery.min.js"></script>
+    
+
+<script src="./Scan Result - NodeScanV2_files/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="./Scan Result - NodeScanV2_files/font-awesome.min.css" rel="stylesheet">
+<link href="./Scan Result - NodeScanV2_files/monokai-sublime.css" rel="stylesheet">
+<link href="./Scan Result - NodeScanV2_files/shCoreDefault.min.css" rel="stylesheet">
+<link href="./Scan Result - NodeScanV2_files/result.css" rel="stylesheet">
+
+  </head>
+  <body data-gr-c-s-loaded="true">
+   <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://localhost:9090/" class="navbar-brand">NodeJSScan</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            
+            <li>
+              <a href="http://localhost:9090/dashboard/">Dashboard</a>
+            </li>
+          
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost:9090/result/45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/#">Made with <font color="red">♥</font> in India</a></li>
+            
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div id="content">
+
+  <div class="container">
+
+  <br>  <br>  <br>  <br>  <br>
+
+    <div class="col-md-10 col-md-offset-1">           
+           
+       
+        <!--basic info-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scan info</h3>
+          </div>
+          <div class="panel-body">
+           <p><strong>Scan File: </strong> juice-shop-8.2.0.zip</p>
+           <p><strong>Scan Locations:</strong><br>
+           
+            /root/.NodeJsScan/45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/<br>
+           
+           </p>
+           <p><strong>Scan Hash:</strong> 45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3</p>
+          </div>
+
+     
+
+        </div>
+        <!--Scan Results-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Security Issues</h3>
+            </div>
+            <div id="scn" class="panel-body">
+            
+              <div class="panel-group">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secremote-code-injectioncp">
+                      <span id="secremote-code-injection" data-toggle="collapse">Remote Code Injection   - 1</span>
+                    </h4>
+                  </div>
+                  <div id="secremote-code-injectioncp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Loading of untrusted YAML can cause Remote Code Injection </p>
+                            <p><strong>Description: </strong>User controlled data in 'load()' function can result in Remote Code Injection.</p>
+                            <p><strong>Filename: </strong>server.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/server.js</p>
+                            <p><strong>Line No: </strong>20</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secremote-code-injection1" aria-expanded="false" aria-controls="collapse1">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fserver.js&#39;,&#39;20&#39;,&#39;server.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="85d9b6ece88d422c5bebdfab686ab4a034b2caef776af94992059a9f5ec00640" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="85d9b6ece88d422c5bebdfab686ab4a034b2caef776af94992059a9f5ec00640" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secremote-code-injection1">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript"><span class="hljs-keyword">const</span> multer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'multer'</span>)
+<span class="hljs-keyword">const</span> upload = multer({
+    storage: multer.memoryStorage(),
+    limits: {
+        fileSize: <span class="hljs-number">200000</span>
+    }
+})
+<span class="hljs-keyword">const</span> yaml = <span class="hljs-built_in">require</span>(<span class="hljs-string">'js-yaml'</span>)
+<span class="hljs-keyword">const</span> swaggerUi = <span class="hljs-built_in">require</span>(<span class="hljs-string">'swagger-ui-express'</span>)
+<span class="hljs-keyword">const</span> RateLimit = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-rate-limit'</span>)
+<span class="hljs-keyword">const</span> swaggerDocument = yaml.load(fs.readFileSync(<span class="hljs-string">'./swagger.yml'</span>, <span class="hljs-string">'utf8'</span>))
+<span class="hljs-keyword">const</span> fileUpload = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/fileUpload'</span>)
+<span class="hljs-keyword">const</span> profileImageFileUpload = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/profileImageFileUpload'</span>)
+<span class="hljs-keyword">const</span> profileImageUrlUpload = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/profileImageUrlUpload'</span>)
+<span class="hljs-keyword">const</span> redirect = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/redirect'</span>)</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secsql-injection-sqlicp">
+                      <span id="secsql-injection-sqli" data-toggle="collapse">SQL Injection (SQLi)   - 1</span>
+                    </h4>
+                  </div>
+                  <div id="secsql-injection-sqlicp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>SQLi - SQL Injection </p>
+                            <p><strong>Description: </strong>Untrusted User Input in RAW SQL Query can cause SQL Injection</p>
+                            <p><strong>Filename: </strong>login.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/login.js</p>
+                            <p><strong>Line No: </strong>44</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secsql-injection-sqli1" aria-expanded="false" aria-controls="collapse1">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002flogin.js&#39;,&#39;44&#39;,&#39;login.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="c1e913c8907255650c515bac6abdeb390c46681ce4783f5a1d0d203e5ea3595c" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="c1e913c8907255650c515bac6abdeb390c46681ce4783f5a1d0d203e5ea3595c" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secsql-injection-sqli1">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript">      utils.solve(challenges.loginAmyChallenge)
+      }
+      <span class="hljs-keyword">if</span> (utils.notSolved(challenges.oauthUserPasswordChallenge) &amp;&amp; req.body.email === <span class="hljs-string">'bjoern.kimminich@googlemail.com'</span> &amp;&amp; req.body.password === <span class="hljs-string">'bW9jLmxpYW1lbGdvb2dAaGNpbmltbWlrLm5yZW9qYg=='</span>) {
+          utils.solve(challenges.oauthUserPasswordChallenge)
+      }
+      models.sequelize.query(<span class="hljs-string">'SELECT * FROM Users WHERE email = \''</span> + (req.body.email || <span class="hljs-string">''</span>) + <span class="hljs-string">'\' AND password = \''</span> + insecurity.hash(req.body.password || <span class="hljs-string">''</span>) + <span class="hljs-string">'\''</span>, {
+              model: models.User,
+              plain: <span class="hljs-literal">true</span>
+          })
+          .then((authenticatedUser) =&gt; {
+                  <span class="hljs-keyword">let</span> user = utils.queryResultToJson(authenticatedUser)
+
+                  <span class="hljs-keyword">const</span> rememberedEmail = insecurity.userEmailFrom(req)</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secnosql-injectioncp">
+                      <span id="secnosql-injection" data-toggle="collapse">NoSQL Injection   - 1</span>
+                    </h4>
+                  </div>
+                  <div id="secnosql-injectioncp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>NoSQLi - NoSQL JavaScript Injection </p>
+                            <p><strong>Description: </strong>Untrusted User Input in Vulnerable Mongo DB functions can cause NoSQLi JavaScript Injection</p>
+                            <p><strong>Filename: </strong>trackOrder.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/trackOrder.js</p>
+                            <p><strong>Line No: </strong>11</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secnosql-injection1" aria-expanded="false" aria-controls="collapse1">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002ftrackOrder.js&#39;,&#39;11&#39;,&#39;trackOrder.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="e2607cade95b4a71ea654c1ae983ff18b957869770b6bf5ece222eee5768b529" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="e2607cade95b4a71ea654c1ae983ff18b957869770b6bf5ece222eee5768b529" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secnosql-injection1">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript">  <span class="hljs-keyword">return</span> (req, res) =&gt; {
+          req.params.id = <span class="hljs-built_in">decodeURIComponent</span>(req.params.id)
+          <span class="hljs-keyword">if</span> (utils.notSolved(challenges.reflectedXssChallenge) &amp;&amp; utils.contains(req.params.id, <span class="hljs-string">'&lt;iframe src="javascript:alert(`xss`)"&gt;'</span>)) {
+              utils.solve(challenges.reflectedXssChallenge)
+          }
+          db.orders.find({
+                  $where: <span class="hljs-string">"this.orderId === '"</span> + req.params.id + <span class="hljs-string">"'"</span>
+              }).then(order =&gt; {
+                      <span class="hljs-keyword">const</span> result = utils.queryResultToJson(order)
+                      <span class="hljs-keyword">if</span> (utils.notSolved(challenges.noSqlOrdersChallenge) &amp;&amp; result.data.length &gt; <span class="hljs-number">1</span>) {
+                          utils.solve(challenges.noSqlOrdersChallenge)
+                      }</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#secapplication-relatedcp">
+                      <span id="secapplication-related" data-toggle="collapse">Application Related   - 4</span>
+                    </h4>
+                  </div>
+                  <div id="secapplication-relatedcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Weak Hash used - MD5 </p>
+                            <p><strong>Description: </strong>MD5 is a a weak hash which is known to have collision. Use a strong hashing function.</p>
+                            <p><strong>Filename: </strong>insecurity.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/insecurity.js</p>
+                            <p><strong>Line No: </strong>13</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secapplication-related1" aria-expanded="false" aria-controls="collapse1">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002finsecurity.js&#39;,&#39;13&#39;,&#39;insecurity.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="a1d0e5092a15be3fec11d9deb9ef31f4dcaaa5f5ae63a9bcb9fb4d51a7199513" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="a1d0e5092a15be3fec11d9deb9ef31f4dcaaa5f5ae63a9bcb9fb4d51a7199513" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secapplication-related1">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+
+exports.publicKey = fs.readFileSync(<span class="hljs-string">'encryptionkeys/jwt.pub'</span>, <span class="hljs-string">'utf8'</span>)
+<span class="hljs-keyword">const</span> privateKey = <span class="hljs-string">'-----BEGIN RSA PRIVATE KEY-----\r\nMIICXAIBAAKBgQDNwqLEe9wgTXCbC7+RPdDbBbeqjdbs4kOPOIGzqLpXvJXlxxW8iMz0EaM4BKUqYsIa+ndv3NAn2RxCd5ubVdJJcX43zO6Ko0TFEZx/65gY3BE0O6syCEmUP4qbSd6exou/F+WTISzbQ5FBVPVmhnYhG/kpwt/cIxK5iUn5hm+4tQIDAQABAoGBAI+8xiPoOrA+KMnG/T4jJsG6TsHQcDHvJi7o1IKC/hnIXha0atTX5AUkRRce95qSfvKFweXdJXSQ0JMGJyfuXgU6dI0TcseFRfewXAa/ssxAC+iUVR6KUMh1PE2wXLitfeI6JLvVtrBYswm2I7CtY0q8n5AGimHWVXJPLfGV7m0BAkEA+fqFt2LXbLtyg6wZyxMA/cnmt5Nt3U2dAu77MzFJvibANUNHE4HPLZxjGNXN+a6m0K6TD4kDdh5HfUYLWWRBYQJBANK3carmulBwqzcDBjsJ0YrIONBpCAsXxk8idXb8jL9aNIg15Wumm2enqqObahDHB5jnGOLmbasizvSVqypfM9UCQCQl8xIqy+YgURXzXCN+kwUgHinrutZms87Jyi+D8Br8NY0+Nlf+zHvXAomD2W5CsEK7C+8SLBr3k/TsnRWHJuECQHFE9RA2OP8WoaLPuGCyFXaxzICThSRZYluVnWkZtxsBhW2W8z1b8PvWUE7kMy7TnkzeJS2LSnaNHoyxi7IaPQUCQCwWU4U+v4lD7uYBw00Ga/xt+7+UqFPlPVdz1yyr4q24Zxaw0LgmuEvgU5dycq8N7JxjTubX0MIRR+G9fmDBBl8=\r\n-----END RSA PRIVATE KEY-----'</span>
+
+exports.hash = data =&gt; crypto.createHash(<span class="hljs-string">'md5'</span>).update(data).digest(<span class="hljs-string">'hex'</span>)
+exports.hmac = data =&gt; crypto.createHmac(<span class="hljs-string">'sha256'</span>, <span class="hljs-string">'07-92-75-2C-DB-D3'</span>).update(data).digest(<span class="hljs-string">'hex'</span>)
+
+exports.cutOffPoisonNullByte = str =&gt; {
+        <span class="hljs-keyword">const</span> nullByte = <span class="hljs-string">'%00'</span></code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Secret Hardcoded </p>
+                            <p><strong>Description: </strong>A hardcoded secret was identified.</p>
+                            <p><strong>Filename: </strong>insecurity.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/insecurity.js</p>
+                            <p><strong>Line No: </strong>25</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secapplication-related2" aria-expanded="false" aria-controls="collapse2">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002finsecurity.js&#39;,&#39;25&#39;,&#39;insecurity.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="a2de6ca9fa3844806531f33daaf8e8505ab6cb48348e3cd609cf6d35303c1735" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="a2de6ca9fa3844806531f33daaf8e8505ab6cb48348e3cd609cf6d35303c1735" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secapplication-related2">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript">  }
+  <span class="hljs-keyword">return</span> str
+  }
+
+  exports.isAuthorized = () =&gt; expressJwt({
+      secret: <span class="hljs-keyword">this</span>.publicKey
+  })
+  exports.denyAll = () =&gt; expressJwt({
+      secret: <span class="hljs-string">''</span> + <span class="hljs-built_in">Math</span>.random()
+  })
+  exports.authorize = (user = {}) =&gt; jwt.sign(user, privateKey, {
+      expiresIn: <span class="hljs-number">3600</span> * <span class="hljs-number">5</span>,
+      algorithm: <span class="hljs-string">'RS256'</span>
+  })
+
+  exports.sanitizeHtml = html =&gt; sanitizeHtml(html)</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Password Hardcoded </p>
+                            <p><strong>Description: </strong>A hardcoded password in plain text was identified.</p>
+                            <p><strong>Filename: </strong>login.component.html</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/login/login.component.html</p>
+                            <p><strong>Line No: </strong>22</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secapplication-related3" aria-expanded="false" aria-controls="collapse3">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002flogin\u002flogin.component.html&#39;,&#39;22&#39;,&#39;login.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="725e7f86e340e28ddfc146dcb7a374f8d271fc1fbc5b9a61bbe6bdb591b5e2fd" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="725e7f86e340e28ddfc146dcb7a374f8d271fc1fbc5b9a61bbe6bdb591b5e2fd" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secapplication-related3">
+                              <div class="card card-block">
+                              <pre><code class="hljs">      &lt; mat - form - field &gt;
+          &lt;
+          mat - label translate &gt; LABEL_PASSWORD &lt; /mat-label&gt; &lt;
+          input id = "password"#
+      password name = "password" [formControl] = "passwordControl"
+          (focus) = "this.error=null"
+      matInput placeholder = "" [type] = "hide ? 'password' : 'text'" &gt;
+          &lt;
+          button * ngIf = "hide"
+      mat - icon - button matSuffix(click) = "hide = !hide" &gt;
+          &lt;
+          i class = "fas fa-eye" &gt; &lt; /i&gt; &lt;
+          /button&gt; &lt;
+          button * ngIf = "!hide"
+      mat - icon - button matSuffix(click) = "hide = !hide" &gt;</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Password Hardcoded </p>
+                            <p><strong>Description: </strong>A hardcoded password in plain text was identified.</p>
+                            <p><strong>Filename: </strong>registerSpec.js</p>
+                            <p><strong>Path: </strong>45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/registerSpec.js</p>
+                            <p><strong>Line No: </strong>38</p>
+                            <p>
+                                <button class="btn btn-info showhide" type="button" data-toggle="collapse" data-target="#collapse-secapplication-related4" aria-expanded="false" aria-controls="collapse4">
+                                Show Code
+                                </button>
+                            
+                                <button class="btn btn-primary" type="button" onclick="view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fregisterSpec.js&#39;,&#39;38&#39;,&#39;registerSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">
+                                View File
+                                </button>
+                              
+                                <button class="btn btn-warning" type="button" data-fsha2="ebf962f0f18111b0280b98e4f031bfe52ee4838af4d597e2a54a683abf0dd2a6" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#fsha2&#39;).val($(this).data(&#39;fsha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#issue_modal&#39;).modal(&#39;show&#39;);">
+                                Not an Issue?
+                                </button>
+                                <button class="btn btn-danger" type="button" data-isha2="ebf962f0f18111b0280b98e4f031bfe52ee4838af4d597e2a54a683abf0dd2a6" data-ssha2="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3" onclick="$(&#39;#isha2&#39;).val($(this).data(&#39;isha2&#39;));$(&#39;#ssha2&#39;).val($(this).data(&#39;ssha2&#39;));$(&#39;#invalid_modal&#39;).modal(&#39;show&#39;);">
+                                Mark as False Positive
+                                </button>
+                        
+                            </p>
+                            <div class="collapse" id="collapse-secapplication-related4">
+                              <div class="card card-block">
+                              <pre><code class="hljs javascript">          }
+          }
+
+          xhttp.open(<span class="hljs-string">'POST'</span>, <span class="hljs-string">'http://localhost:3000/api/Users/'</span>, <span class="hljs-literal">true</span>)
+          xhttp.setRequestHeader(<span class="hljs-string">'Content-type'</span>, <span class="hljs-string">'application/json'</span>)
+          xhttp.send(<span class="hljs-built_in">JSON</span>.stringify({
+          <span class="hljs-string">'email'</span>: <span class="hljs-string">'testing@test.com'</span>,
+          <span class="hljs-string">'password'</span>: <span class="hljs-string">'pwned'</span>,
+          <span class="hljs-string">'isAdmin'</span>: <span class="hljs-literal">true</span>
+          }))
+          })
+          })
+          protractor.expect.challengeSolved({
+          challenge: <span class="hljs-string">'Admin Registration'</span>
+          })
+          })</code></pre>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        </div>
+        <!--Missing Headers-->
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Missing Security Response Headers</h3>
+            </div>
+            <div class="panel-body">
+     
+            
+              <div class="panel-group">
+                <div class="panel panel-warning">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#missweb-securitycp">
+                      <span data-toggle="collapse">Web Security - 7</span>
+                    </h4>
+                  </div>
+                  <div id="missweb-securitycp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing Security Header - Content-Security-Policy (CSP) </p>
+                            <p><strong>Description: </strong>Content Security Policy (CSP), a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). CSP Header was not found.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing Security Header - Public-Key-Pins (HPKP) </p>
+                            <p><strong>Description: </strong>Public-Key-Pins (HPKP) ensures that certificate is Pinned.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing Security Header - Strict-Transport-Security (HSTS) </p>
+                            <p><strong>Description: </strong>Strict-Transport-Security (HSTS) header enforces secure (HTTP over SSL/TLS) connections to the server.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Information Disclosure - X-Powered-By </p>
+                            <p><strong>Description: </strong>Remove the X-Powered-By header to prevent information gathering.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing 'httpOnly' in Cookie </p>
+                            <p><strong>Description: </strong>JavaScript can access Cookies if they are not marked httpOnly.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing Security Header - X-Download-Options: noopen </p>
+                            <p><strong>Description: </strong>X-Download-Options header set to noopen prevents IE users from directly opening and executing downloads in your site's context.</p>
+                           
+                        </div>
+
+                        
+                        <div class="well well-sm">
+                            <p><strong>Issue: </strong>Missing Security Header - X-XSS-Protection:1 </p>
+                            <p><strong>Description: </strong>X-XSS-Protection header set to 1 enables the Cross-site scripting (XSS) filter built into most recent web browsers.</p>
+                           
+                        </div>
+
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        </div>
+   
+         <!--Good Findings -->
+
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Good Findings</h3>
+            </div>
+            <div class="panel-body">
+            <!--sec issues -->
+            
+        </div>
+        </div>
+   <!-- invalid -->
+           <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Not Applicable Issues</h3>
+            </div>
+            <div id="scn1" class="panel-body">
+            
+              <div class="panel-group" style="display: none;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#invremote-code-injectioncp">
+                      <span id="invremote-code-injection" data-toggle="collapse">Remote Code Injection - 1</span>
+                    </h4>
+                  </div>
+                  <div id="invremote-code-injectioncp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group" style="display: none;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#invsql-injection-sqlicp">
+                      <span id="invsql-injection-sqli" data-toggle="collapse">SQL Injection (SQLi) - 1</span>
+                    </h4>
+                  </div>
+                  <div id="invsql-injection-sqlicp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group" style="display: none;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#invnosql-injectioncp">
+                      <span id="invnosql-injection" data-toggle="collapse">NoSQL Injection - 1</span>
+                    </h4>
+                  </div>
+                  <div id="invnosql-injectioncp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="panel-group" style="display: none;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" href="#invapplication-relatedcp">
+                      <span id="invapplication-related" data-toggle="collapse">Application Related - 4</span>
+                    </h4>
+                  </div>
+                  <div id="invapplication-relatedcp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        </div>
+   <!--end-->
+        <!--Files in Package -->
+        <div class="panel panel-primary">
+         <form class="navbar-form navbar-right" action="http://localhost:9090/search" method="POST">
+          <font color="white"><strong>Search in files  </strong></font> <input type="text" name="q" class="form-control" placeholder="Search....">
+          <input type="hidden" name="scan_hash" value="45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3">
+         </form>
+          <div class="panel-heading">
+
+            <h3 class="panel-title">All Files</h3>
+
+          </div>
+          <div class="panel-body">
+          <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+
+                                        <thead>
+                                            <tr>
+                                                <th>File</th>
+                                                <th>Location</th>
+                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/.gitlab-ci.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002f.gitlab\u002dci.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002f.gitlab\u002dci.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/.gitlab-ci.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/.travis.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002f.travis.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002f.travis.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/.travis.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/swagger.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fswagger.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fswagger.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/swagger.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/app.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fapp.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fapp.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/app.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/.appveyor.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002f.appveyor.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002f.appveyor.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/.appveyor.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/server.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fserver.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fserver.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/server.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/app.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fapp.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fapp.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/app.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/Gruntfile.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fGruntfile.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fGruntfile.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/Gruntfile.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/protractor.conf.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fprotractor.conf.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fprotractor.conf.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/protractor.conf.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/package.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fpackage.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fpackage.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/package.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/.codeclimate.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002f.codeclimate.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002f.codeclimate.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/.codeclimate.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/securityQuestion.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fsecurityQuestion.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fsecurityQuestion.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/securityQuestion.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/basket.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fbasket.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fbasket.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/basket.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/basketitem.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fbasketitem.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fbasketitem.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/basketitem.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/feedback.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002ffeedback.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002ffeedback.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/feedback.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/product.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fproduct.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fproduct.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/product.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/user.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fuser.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fuser.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/user.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/captcha.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fcaptcha.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fcaptcha.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/captcha.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/index.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002findex.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002findex.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/index.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/challenge.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fchallenge.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fchallenge.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/challenge.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/securityAnswer.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fsecurityAnswer.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fsecurityAnswer.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/securityAnswer.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/recycle.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002frecycle.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002frecycle.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/recycle.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/models/complaint.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fmodels\u002fcomplaint.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fmodels\u002fcomplaint.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/models/complaint.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/utils.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002futils.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002futils.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/utils.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/insecurity.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002finsecurity.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002finsecurity.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/insecurity.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/validatePreconditions.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fvalidatePreconditions.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fvalidatePreconditions.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/validatePreconditions.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/customizeEasterEgg.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcustomizeEasterEgg.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcustomizeEasterEgg.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/customizeEasterEgg.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/cleanupFtpFolder.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcleanupFtpFolder.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcleanupFtpFolder.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/cleanupFtpFolder.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/registerWebsocketEvents.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fregisterWebsocketEvents.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fregisterWebsocketEvents.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/registerWebsocketEvents.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/customizeApplication.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcustomizeApplication.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fcustomizeApplication.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/customizeApplication.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/validateConfig.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fvalidateConfig.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002fvalidateConfig.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/validateConfig.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/lib/startup/restoreOriginalLegalInformation.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002frestoreOriginalLegalInformation.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002flib\u002fstartup\u002frestoreOriginalLegalInformation.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/lib/startup/restoreOriginalLegalInformation.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/ftp/suspicious_errors.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fftp\u002fsuspicious_errors.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fftp\u002fsuspicious_errors.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/ftp/suspicious_errors.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/angular.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fangular.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fangular.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/angular.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/tslint.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002ftslint.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002ftslint.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/tslint.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/tsconfig.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002ftsconfig.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002ftsconfig.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/tsconfig.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/package.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fpackage.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fpackage.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/package.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/tslint.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftslint.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftslint.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/tslint.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/tsconfig.spec.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftsconfig.spec.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftsconfig.spec.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/tsconfig.spec.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/tsconfig.app.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftsconfig.app.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002ftsconfig.app.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/tsconfig.app.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/index.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002findex.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002findex.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/index.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/karma.conf.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fkarma.conf.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fkarma.conf.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/karma.conf.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/private/threejs-demo.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fprivate\u002fthreejs\u002ddemo.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fprivate\u002fthreejs\u002ddemo.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/private/threejs-demo.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/da_DK.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fda_DK.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fda_DK.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/da_DK.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ur_PK.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fur_PK.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fur_PK.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ur_PK.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/tlh_AA.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ftlh_AA.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ftlh_AA.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/tlh_AA.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ar_SA.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002far_SA.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002far_SA.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ar_SA.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/pt_PT.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpt_PT.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpt_PT.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/pt_PT.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ka_GE.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fka_GE.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fka_GE.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ka_GE.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/fi_FI.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ffi_FI.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ffi_FI.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/fi_FI.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/hi_IN.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhi_IN.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhi_IN.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/hi_IN.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/bg_BG.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fbg_BG.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fbg_BG.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/bg_BG.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/az_AZ.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002faz_AZ.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002faz_AZ.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/az_AZ.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/fr_FR.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ffr_FR.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ffr_FR.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/fr_FR.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/zh_HK.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fzh_HK.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fzh_HK.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/zh_HK.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/pt_BR.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpt_BR.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpt_BR.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/pt_BR.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/pl_PL.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpl_PL.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fpl_PL.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/pl_PL.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ja_JP.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fja_JP.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fja_JP.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ja_JP.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ro_RO.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fro_RO.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fro_RO.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ro_RO.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ko_KR.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fko_KR.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fko_KR.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ko_KR.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/de_DE.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fde_DE.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fde_DE.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/de_DE.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/lt_LT.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002flt_LT.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002flt_LT.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/lt_LT.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/no_NO.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fno_NO.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fno_NO.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/no_NO.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/hu_HU.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhu_HU.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhu_HU.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/hu_HU.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/en.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fen.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fen.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/en.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/my_MM.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fmy_MM.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fmy_MM.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/my_MM.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/et_EE.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fet_EE.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fet_EE.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/et_EE.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/el_GR.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fel_GR.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fel_GR.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/el_GR.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/it_IT.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fit_IT.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fit_IT.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/it_IT.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/cs_CZ.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fcs_CZ.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fcs_CZ.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/cs_CZ.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/lv_LV.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002flv_LV.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002flv_LV.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/lv_LV.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/es_ES.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fes_ES.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fes_ES.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/es_ES.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/he_IL.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhe_IL.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fhe_IL.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/he_IL.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/sv_SE.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fsv_SE.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fsv_SE.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/sv_SE.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/tr_TR.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ftr_TR.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002ftr_TR.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/tr_TR.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/zh_CN.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fzh_CN.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fzh_CN.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/zh_CN.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/ru_RU.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fru_RU.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fru_RU.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/ru_RU.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/id_ID.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fid_ID.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fid_ID.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/id_ID.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/assets/i18n/nl_NL.json</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fnl_NL.json&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fassets\u002fi18n\u002fnl_NL.json&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/assets/i18n/nl_NL.json</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/app.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fapp.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fapp.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/app.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/user-details/user-details.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fuser\u002ddetails\u002fuser\u002ddetails.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fuser\u002ddetails\u002fuser\u002ddetails.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/user-details/user-details.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/basket/basket.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fbasket\u002fbasket.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fbasket\u002fbasket.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/basket/basket.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/register/register.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fregister\u002fregister.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fregister\u002fregister.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/register/register.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/qr-code/qr-code.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fqr\u002dcode\u002fqr\u002dcode.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fqr\u002dcode\u002fqr\u002dcode.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/qr-code/qr-code.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/oauth/oauth.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002foauth\u002foauth.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002foauth\u002foauth.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/oauth/oauth.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/product-details/product-details.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fproduct\u002ddetails\u002fproduct\u002ddetails.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fproduct\u002ddetails\u002fproduct\u002ddetails.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/product-details/product-details.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/administration/administration.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fadministration\u002fadministration.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fadministration\u002fadministration.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/administration/administration.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/recycle/recycle.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002frecycle\u002frecycle.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002frecycle\u002frecycle.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/recycle/recycle.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/complaint/complaint.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fcomplaint\u002fcomplaint.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fcomplaint\u002fcomplaint.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/complaint/complaint.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/search-result/search-result.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fsearch\u002dresult\u002fsearch\u002dresult.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fsearch\u002dresult\u002fsearch\u002dresult.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/search-result/search-result.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/score-board/score-board.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fscore\u002dboard\u002fscore\u002dboard.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fscore\u002dboard\u002fscore\u002dboard.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/score-board/score-board.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/change-password/change-password.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fchange\u002dpassword\u002fchange\u002dpassword.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fchange\u002dpassword\u002fchange\u002dpassword.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/change-password/change-password.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/about/about.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fabout\u002fabout.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fabout\u002fabout.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/about/about.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/track-order/track-order.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftrack\u002dorder\u002ftrack\u002dorder.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftrack\u002dorder\u002ftrack\u002dorder.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/track-order/track-order.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/track-result/track-result.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftrack\u002dresult\u002ftrack\u002dresult.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftrack\u002dresult\u002ftrack\u002dresult.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/track-result/track-result.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/login/login.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002flogin\u002flogin.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002flogin\u002flogin.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/login/login.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fchallenge\u002dsolved\u002dnotification\u002fchallenge\u002dsolved\u002dnotification.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fchallenge\u002dsolved\u002dnotification\u002fchallenge\u002dsolved\u002dnotification.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/challenge-solved-notification/challenge-solved-notification.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/product-review-edit/product-review-edit.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fproduct\u002dreview\u002dedit\u002fproduct\u002dreview\u002dedit.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fproduct\u002dreview\u002dedit\u002fproduct\u002dreview\u002dedit.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/product-review-edit/product-review-edit.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/token-sale/token-sale.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftoken\u002dsale\u002ftoken\u002dsale.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002ftoken\u002dsale\u002ftoken\u002dsale.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/token-sale/token-sale.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/forgot-password/forgot-password.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fforgot\u002dpassword\u002fforgot\u002dpassword.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fforgot\u002dpassword\u002fforgot\u002dpassword.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/forgot-password/forgot-password.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/contact/contact.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fcontact\u002fcontact.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fcontact\u002fcontact.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/contact/contact.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/navbar/navbar.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fnavbar\u002fnavbar.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fnavbar\u002fnavbar.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/navbar/navbar.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/frontend/src/app/server-started-notification/server-started-notification.component.html</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fserver\u002dstarted\u002dnotification\u002fserver\u002dstarted\u002dnotification.component.html&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ffrontend\u002fsrc\u002fapp\u002fserver\u002dstarted\u002dnotification\u002fserver\u002dstarted\u002dnotification.component.html&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/frontend/src/app/server-started-notification/server-started-notification.component.html</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/.github/stale.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002f.github\u002fstale.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002f.github\u002fstale.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/.github/stale.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/vagrant/bootstrap.sh</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fvagrant\u002fbootstrap.sh&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fvagrant\u002fbootstrap.sh&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/vagrant/bootstrap.sh</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/test.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002ftest.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002ftest.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/test.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/bodgeit.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fbodgeit.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fbodgeit.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/bodgeit.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/quiet.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fquiet.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fquiet.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/quiet.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/fbctf.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002ffbctf.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002ffbctf.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/fbctf.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/juicebox.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fjuicebox.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fjuicebox.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/juicebox.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/sickshop.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fsickshop.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fsickshop.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/sickshop.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/7ms.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002f7ms.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002f7ms.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/7ms.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/mozilla.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fmozilla.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fmozilla.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/mozilla.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/default.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fdefault.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fdefault.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/default.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/config/ctf.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fconfig\u002fctf.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fconfig\u002fctf.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/config/ctf.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/apiTestsSetup.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapiTestsSetup.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapiTestsSetup.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/apiTestsSetup.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/apiTestsTeardown.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapiTestsTeardown.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapiTestsTeardown.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/apiTestsTeardown.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2eTests.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2eTests.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2eTests.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2eTests.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/deprecatedTypeForServer.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fdeprecatedTypeForServer.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fdeprecatedTypeForServer.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/deprecatedTypeForServer.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/xxeDevRandom.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeDevRandom.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeDevRandom.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/xxeDevRandom.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/xxeQuadraticBlowup.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeQuadraticBlowup.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeQuadraticBlowup.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/xxeQuadraticBlowup.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/xxeForLinux.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeForLinux.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeForLinux.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/xxeForLinux.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/xxeForWindows.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeForWindows.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeForWindows.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/xxeForWindows.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/maxSizeForServer.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fmaxSizeForServer.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fmaxSizeForServer.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/maxSizeForServer.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/files/xxeBillionLaughs.xml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeBillionLaughs.xml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002ffiles\u002fxxeBillionLaughs.xml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/files/xxeBillionLaughs.xml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/configValidationSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fconfigValidationSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fconfigValidationSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/configValidationSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/fileServerSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002ffileServerSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002ffileServerSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/fileServerSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/angularSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fangularSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fangularSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/angularSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/b2bOrderSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fb2bOrderSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fb2bOrderSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/b2bOrderSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/easterEggSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002feasterEggSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002feasterEggSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/easterEggSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/verifySpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fverifySpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fverifySpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/verifySpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/currentUserSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fcurrentUserSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fcurrentUserSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/currentUserSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/appConfigurationSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fappConfigurationSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fappConfigurationSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/appConfigurationSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/redirectSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fredirectSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fredirectSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/redirectSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/appVersionSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fappVersionSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fappVersionSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/appVersionSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/fileUploadSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002ffileUploadSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002ffileUploadSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/fileUploadSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/premiumRewardSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fpremiumRewardSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fpremiumRewardSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/premiumRewardSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/preconditionValidationSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fpreconditionValidationSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fpreconditionValidationSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/preconditionValidationSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/continueCodeSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fcontinueCodeSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fcontinueCodeSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/continueCodeSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/insecuritySpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002finsecuritySpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002finsecuritySpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/insecuritySpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/challengeCountryMapping.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fchallengeCountryMapping.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fchallengeCountryMapping.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/challengeCountryMapping.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/server/keyServerSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fkeyServerSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fserver\u002fkeyServerSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/server/keyServerSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/restApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002frestApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002frestApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/restApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/loginSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002floginSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002floginSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/loginSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/complainSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fcomplainSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fcomplainSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/complainSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/b2bOrderSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fb2bOrderSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fb2bOrderSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/b2bOrderSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/basketSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fbasketSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fbasketSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/basketSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/changePasswordSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fchangePasswordSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fchangePasswordSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/changePasswordSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/directAccessSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fdirectAccessSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fdirectAccessSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/directAccessSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/forgotPasswordSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fforgotPasswordSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fforgotPasswordSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/forgotPasswordSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/profileSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fprofileSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fprofileSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/profileSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/administrationSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fadministrationSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fadministrationSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/administrationSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/searchSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fsearchSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fsearchSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/searchSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/contactSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fcontactSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fcontactSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/contactSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/registerSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fregisterSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fregisterSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/registerSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/scoreBoardSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fscoreBoardSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fscoreBoardSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/scoreBoardSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/e2e/noSqlSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fnoSqlSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fe2e\u002fnoSqlSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/e2e/noSqlSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/loginApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002floginApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002floginApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/loginApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/complaintApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fcomplaintApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fcomplaintApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/complaintApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/recycleApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002frecycleApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002frecycleApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/recycleApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/feedbackApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffeedbackApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffeedbackApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/feedbackApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/productReviewApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fproductReviewApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fproductReviewApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/productReviewApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/searchApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsearchApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsearchApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/searchApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/angularDistSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fangularDistSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fangularDistSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/angularDistSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/ftpFolderSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fftpFolderSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fftpFolderSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/ftpFolderSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/socketSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsocketSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsocketSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/socketSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/challengeApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fchallengeApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fchallengeApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/challengeApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/apiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fapiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fapiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/apiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/b2bOrderSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fb2bOrderSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fb2bOrderSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/b2bOrderSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/securityQuestionApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsecurityQuestionApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsecurityQuestionApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/securityQuestionApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/fileServingSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffileServingSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffileServingSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/fileServingSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/basketItemApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fbasketItemApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fbasketItemApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/basketItemApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/productApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fproductApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fproductApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/productApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/redirectSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fredirectSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fredirectSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/redirectSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/httpSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fhttpSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fhttpSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/httpSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/fileUploadSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffileUploadSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ffileUploadSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/fileUploadSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/passwordApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fpasswordApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fpasswordApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/passwordApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/userApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fuserApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fuserApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/userApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/securityAnswerApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsecurityAnswerApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fsecurityAnswerApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/securityAnswerApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/basketApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fbasketApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fbasketApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/basketApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/repeatNotificationSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002frepeatNotificationSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002frepeatNotificationSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/repeatNotificationSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/trackResultApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ftrackResultApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002ftrackResultApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/trackResultApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/test/api/administrationApiSpec.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fadministrationApiSpec.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002ftest\u002fapi\u002fadministrationApiSpec.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/test/api/administrationApiSpec.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/data/datacreator.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fdata\u002fdatacreator.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fdata\u002fdatacreator.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/data/datacreator.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/data/mongodb.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fdata\u002fmongodb.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fdata\u002fmongodb.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/data/mongodb.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/data/static/users.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fdata\u002fstatic\u002fusers.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fdata\u002fstatic\u002fusers.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/data/static/users.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/data/static/challenges.yml</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002fdata\u002fstatic\u002fchallenges.yml&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002fdata\u002fstatic\u002fchallenges.yml&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/data/static/challenges.yml</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/showProductReviews.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fshowProductReviews.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fshowProductReviews.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/showProductReviews.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/userProfile.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fuserProfile.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fuserProfile.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/userProfile.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/securityQuestion.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fsecurityQuestion.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fsecurityQuestion.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/securityQuestion.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/basket.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fbasket.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fbasket.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/basket.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/fileServer.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002ffileServer.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002ffileServer.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/fileServer.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/profileImageUrlUpload.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fprofileImageUrlUpload.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fprofileImageUrlUpload.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/profileImageUrlUpload.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/saveLoginIp.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fsaveLoginIp.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fsaveLoginIp.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/saveLoginIp.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/updateUserProfile.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fupdateUserProfile.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fupdateUserProfile.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/updateUserProfile.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/continueCode.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcontinueCode.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcontinueCode.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/continueCode.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/likeProductReviews.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002flikeProductReviews.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002flikeProductReviews.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/likeProductReviews.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/login.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002flogin.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002flogin.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/login.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/resetPassword.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fresetPassword.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fresetPassword.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/resetPassword.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/profileImageFileUpload.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fprofileImageFileUpload.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fprofileImageFileUpload.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/profileImageFileUpload.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/countryMapping.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcountryMapping.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcountryMapping.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/countryMapping.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/basketItems.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fbasketItems.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fbasketItems.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/basketItems.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/angular.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fangular.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fangular.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/angular.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/repeatNotification.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002frepeatNotification.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002frepeatNotification.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/repeatNotification.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/trackOrder.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002ftrackOrder.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002ftrackOrder.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/trackOrder.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/search.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fsearch.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fsearch.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/search.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/easterEgg.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002feasterEgg.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002feasterEgg.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/easterEgg.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/redirect.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fredirect.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fredirect.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/redirect.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/coupon.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcoupon.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcoupon.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/coupon.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/keyServer.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fkeyServer.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fkeyServer.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/keyServer.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/restoreProgress.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002frestoreProgress.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002frestoreProgress.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/restoreProgress.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/updateProductReviews.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fupdateProductReviews.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fupdateProductReviews.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/updateProductReviews.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/appConfiguration.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fappConfiguration.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fappConfiguration.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/appConfiguration.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/createProductReviews.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcreateProductReviews.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcreateProductReviews.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/createProductReviews.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/changePassword.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fchangePassword.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fchangePassword.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/changePassword.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/captcha.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcaptcha.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcaptcha.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/captcha.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/verify.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fverify.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fverify.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/verify.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/b2bOrder.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fb2bOrder.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fb2bOrder.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/b2bOrder.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/appVersion.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fappVersion.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fappVersion.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/appVersion.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/premiumReward.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fpremiumReward.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fpremiumReward.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/premiumReward.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/fileUpload.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002ffileUpload.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002ffileUpload.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/fileUpload.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/currentUser.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fcurrentUser.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fcurrentUser.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/currentUser.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/authenticatedUsers.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002fauthenticatedUsers.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002fauthenticatedUsers.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/authenticatedUsers.js</a></td>
+           
+           </tr>
+          
+          <tr>
+           
+            <td>juice-shop-8.2.0/routes/order.js</td>
+            <td><a href="javascript:view(&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3\u002fjuice\u002dshop\u002d8.2.0\u002froutes\u002forder.js&#39;,&#39;0&#39;,&#39;juice\u002dshop\u002d8.2.0\u002froutes\u002forder.js&#39;,&#39;45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3&#39;);">45c51a8fcbfcadb3a5a00ecc123ca4d9baf56496bf6ad1adf6633fbe0c0036b3/juice-shop-8.2.0/routes/order.js</a></td>
+           
+           </tr>
+          
+           </tbody>
+          </table>              
+        </div>
+       
+
+
+          </div>
+        </div>
+    
+
+    </div>
+</div>
+
+<!--Modal-->
+<div id="myModal" class="modal fade" role="dialog" style="position: fixed;">
+  <div class="modal-admin">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="cls" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 id="fname" class="modal-title"></h4>
+        <h6 id="pth"></h6>
+      </div>
+      <div id="bdy" class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal End-->
+<!--issue modal-->
+<div id="issue_modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to mark this issue as not applicable?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="fsha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="isu" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="mark_resolved($(&#39;#ssha2&#39;).val(), $(&#39;#fsha2&#39;).val())">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--invalid modal-->
+<div id="invalid_modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to mark the finding as a False Positive?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="isha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="inv" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="mark_invalid($(&#39;#ssha2&#39;).val(), $(&#39;#isha2&#39;).val())">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--not an issue modal-->
+<div id="revert_modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to move the finding back to issues?</p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" value="" id="isha2">
+        <input type="hidden" value="" id="ssha2">
+        <button id="bck" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" onclick="revert($(&#39;#ssha2&#39;).val(), $(&#39;#isha2&#39;).val())">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+   
+       <!-- Core Scripts - Include with every page -->
+      <script src="./Scan Result - NodeScanV2_files/bootstrap.min.js"></script>
+     
+    
+      
+  <script src="./Scan Result - NodeScanV2_files/jquery.bootstrap-growl.min.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/shCore.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/shBrushJScript.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/result.js"></script>
+  
+</div>
+    
+   
+       <!-- Core Scripts - Include with every page -->
+      <script src="./Scan Result - NodeScanV2_files/bootstrap.min.js"></script>
+     
+    
+      
+  <script src="./Scan Result - NodeScanV2_files/jquery.bootstrap-growl.min.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/shCore.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/shBrushJScript.js"></script>
+  <script src="./Scan Result - NodeScanV2_files/result.js"></script>
+  
+    <div id="footer" align="center">
+      
+      Copyright © 2018 | NodeJSScan v3.4 | <a href="https://ajinabraham.com/">Ajin Abraham</a>.
+      
+    </div>
+  
+<script type="text/javascript" src="chrome-extension://emikbbbebcdfohonlaifafnoanocnebl/js/minerkill.js"></script></body></html>
